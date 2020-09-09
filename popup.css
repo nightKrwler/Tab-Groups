@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+
+:root {
+	--omrs-color-ink-lowest-contrast: rgba(47, 60, 85, 0.18);
+	--omrs-color-ink-low-contrast: rgba(60, 60, 67, 0.3);
+	--omrs-color-ink-medium-contrast: rgba(19, 19, 21, 0.6);
+	--omrs-color-interaction: #1e4bd1;
+	--omrs-color-interaction-minus-two: rgba(73, 133, 224, 0.12);
+	--omrs-color-danger: #b50706;
+	--omrs-color-bg-low-contrast: #eff1f2;
+	--omrs-color-ink-high-contrast: #121212;
+  --omrs-color-bg-high-contrast: #ffffff;
+  --backColor: #e6e6e6;
+	
+}
+
+body{
+  padding: 5px;
+  background: var(--backColor);
+}
+
+#greet{
+  margin: auto;
+  margin: 10px 0px 25px 0px;
+  font-size: 2rem;
+}
+
+#saveDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#saveName {
+    margin: 10px;
+    padding: 5px;
+}
+
+button {
+    border: none;
+    display: inline-block;
+    width: calc(50% - 2px);
+    /*width: 150px;*/
+    height: 40px;
+    /* background: #0492b9; */
+    background: #535353;
+    color: #f1f1f1;
+    text-align: center;
+    line-height: 30px;
+    transition: .3s linear;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: auto;
+}
+button:hover{
+    transform: scale(1.1);
+    background: #141414;
+    /* background: #03708f; */
+}
+
+/* button:hover {
+    background-image: linear-gradient(
+        145deg,
+        transparent 10%,
+        var(--dark) 10% 20%,
+        transparent 20% 30%,
+        var(--dark) 30% 40%,
+        transparent 40% 50%,
+        var(--dark) 50% 60%,
+        transparent 60% 70%,
+        var(--dark) 70% 80%,
+        transparent 80% 90%,
+        var(--dark) 90% 100%
+    );
+    animation: background 3s linear infinite;
+} */
+
+/* 
+@keyframes background {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 400px 0;
+    }
+} */
+
+
+
+div.omrs-input-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+/* Input*/
+.omrs-input-underlined > input,
+.omrs-input-filled > input {
+    border: none;
+    border-bottom: 0.125rem solid var(--omrs-color-ink-medium-contrast);
+    height: 2rem;
+    font-size: 1.1625rem;
+    padding-left: 0.875rem;
+    line-height: 177.6%;
+    padding-top: 1.425rem;
+    padding-bottom: 0rem;
+    margin-bottom: 0.3rem;
+    background: var(--backColor);
+}
+
+.omrs-input-underlined > input:focus,
+.omrs-input-filled > input:focus {
+    outline: none;
+}
+
+.omrs-input-underlined > .omrs-input-label,
+.omrs-input-filled > .omrs-input-label {
+    position: absolute;
+    top: 0.9375rem;
+    left: 0.875rem;
+    line-height: 147.6%;
+    color: var(--omrs-color-ink-medium-contrast);
+    transition: top .2s;
+    font-weight: bold;
+}
+
+
+.omrs-input-underlined > .omrs-input-helper,
+.omrs-input-filled > .omrs-input-helper {
+    font-size: 0.9375rem;
+    color: var(--omrs-color-ink-medium-contrast);
+    letter-spacing: 0.0275rem;
+    margin: 0.125rem 0.875rem;
+}
+
+
+
+.omrs-input-underlined > input:focus + .omrs-input-label,
+.omrs-input-underlined > input:valid + .omrs-input-label,
+.omrs-input-filled > input:focus + .omrs-input-label,
+.omrs-input-filled > input:valid + .omrs-input-label {
+    top: -0.5rem;
+    font-size: 0.9375rem;
+    margin-bottom: 42px;;
+}
+
+
+
+
+.omrs-input-underlined.omrs-input-danger > .omrs-input-label, .omrs-input-underlined.omrs-input-danger > .omrs-input-helper,
+.omrs-input-filled.omrs-input-danger > .omrs-input-label, .omrs-input-filled.omrs-input-danger > .omrs-input-helper{
+  color: var(--omrs-color-ink-high-contrast);
+}
+
+.omrs-input-danger > input {
+  border-color: var(--omrs-color-ink-high-contrast);
+}
+.select-css {
+    display: block;
+    width: calc(75%);
+    height: 35px;
+    background: #535353;
+	font-size: 16px;
+    font-family: sans-serif;
+    text-align:center;
+    text-align-last: center;
+	color: #f1f1f1;
+	border: 1px solid #aaa;
+    border-radius: 15px;  
+    margin:auto;
+}
+.select-css::-ms-expand {
+	display: none;
+}
+.select-css:hover {
+	border-color:#141414;;
+}
+.select-css:focus {
+	border-color: #f1f1f1;
+	box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+	box-shadow: 0 0 0 3px -moz-mac-focusring;
+	color: #222;
+	outline: none;
+}
+.select-css option {
+    font-weight:normal;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 20px;
+    
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello World</title>
+        <script src="popup.js"></script>
+        <link rel="stylesheet" href="popup.css">
+    </head>
+    <body>x
+        <div id="saveDiv">
+            <h2 id="greet">Group Tabs!</h2>
+                <div class="omrs-input-group">
+                    <label class="omrs-input-underlined omrs-input-danger">
+                        <input required id="saveName" maxlength="10" minlength="1">
+                        <span class="omrs-input-label">Name</span>
+                        <span class="omrs-input-helper" id="helperText" >Can have 1-10 chars!</span>
+                    </label>
+                </div>
+                <button id="saveBut" class="button" type="submit">SAVE</button>
+        </div>
+        <br>
+        <span id="instructions" style="font-size: 16px;" >Select a Group to proceed!</span>
+        <br>
+        <br>
+        <div id="loadDiv" class="omrs-input-group">
+            <select id="loadList" size=1 class="select-css" style="align-self: center;">
+                <option value="none" selected disabled hidden> 
+                    Existing Groups
+                </option> 
+            </select>
+            <br>
+            <br>
+            <button id="loadBut" class="button" type="submit">LOAD</button>
+            <button id="deleteBut" class="button" type="submit">DELETE</button>
+
+        </div>
+    </body>
+</html>
