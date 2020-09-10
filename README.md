@@ -3,6 +3,7 @@ A chrome extension to save the currently opened tabs as a group and open them ag
 
 * Download and extract zip
 * Open Chrome and go to [Extension page](chrome://extensions)
+* Switch on Developer Mode
 * Click "Load Unpacked"
 * Select the folder containing manifest.json
 * Extension installed!
